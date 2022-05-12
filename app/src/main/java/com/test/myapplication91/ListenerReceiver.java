@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class ListenerReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        if(Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
+        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
             Intent thisIntent = new Intent(context, com.test.myapplication91.ListenerActivity.class);//设置要启动的app
             thisIntent.setAction("android.intent.action.MAIN");
             thisIntent.addCategory("android.intent.category.LAUNCHER");
